@@ -1,4 +1,4 @@
-# CS3_1stQtrPortfolio_Art
+# CS3_1stQtrPortfolio_Valdriz_Art Nathaniel
 
 ![Portfolio](https://wiztoonz.com/wp-content/uploads/2022/04/Blog-Post-Portfolio.jpg)
 
