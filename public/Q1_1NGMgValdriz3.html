@@ -1,6 +1,4 @@
 <html>
-<head>
-   
 <body>
     <!-- comment line -->
 
@@ -23,8 +21,11 @@
         <p>Result: <span id="output"> </span> </p>
   	    <script>
             function Acceptinput(){
+              let age = document.getElementById("age").value;
               let maxAge = document.getElementById("maxAge").value;
-              let totalRequired = (document.getElementById("numPerDay").value * 365) * (document.getElementById("maxAge").value - (document.getElementById("age").value);
+              let numPerDay = document.getElementById("numPerDay").value;
+
+              let totalRequired = (Number(numPerDay) * 365) * (Number(maxAge) - Number(age));
               document.getElementById("output").innerHTML = `<b>You will need ${totalRequired} to last you until the ripe old age of ${maxAge}</b>`;
             }
         </script>
