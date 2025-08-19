@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+   <h2> Q1 3rd Graded Exercise submitted by Art Valdriz of 9-Magnesium </h2>
+   
+   <label> Guess the Number: **** </label> <br/>
+   <br/>
+   <label> The number is from 1 to 100. </label> <br/>
+   <br/>
+   <label> Enter your guess: 
+     <input id="guess">
+   </label><br/>
+
+   <br/>
+
+   <button onclick="checkIt()"> Check It </button> 
+     <p> Result: <span id="output"> </span> </p>
+    <script>
+
+       var dNumber = Math.floor(Math.random() * 100) + 1; 
+
+        function checkIt() {
+            let guess = parseFloat(document.getElementById("guess").value);
+
+            if (guess > dNumber) {
+              document.getElementById("output").innerHTML = `Lower`; 
+            }
+            else if (guess == dNumber) {
+              document.getElementById("output").innerHTML = `You are correct!` ;
+            }
+            else {
+              document.getElementById("output").innerHTML = `Higher` ;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
